@@ -1,4 +1,4 @@
-- name: Expense Frontend setup
+- name: Expense Frontend setup v1
   hosts: all
   tasks:
     - name : Installing Nginx
@@ -27,6 +27,8 @@
         name: nginx
         state: restarted
         enabled: yes
+
+
 
 
 
