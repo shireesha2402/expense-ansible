@@ -25,7 +25,7 @@
     - name: Download and extract app content
       ansible.builtin.unarchive:
         src: https://expense-artifacts.s3.amazonaws.com/backend.zip
-        dest: /usr/share/nginx/html
+        dest: /app
         remote_src: yes
     - name: Download NodeJS Dependencies
       ansible.builtin.shell: npm install
