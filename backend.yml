@@ -32,7 +32,7 @@
       args:
         chdir: /app
     - name: Install MySQL client
-      ansible.builtin.dbf:
+      ansible.builtin.dnf:
         name: mysql
         state: present
     - name: Load Schema
