@@ -12,7 +12,7 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: app-prereq
-    vars:
+  vars:
       app_dir: /usr/share/nginx/html
       component: frontend
 
